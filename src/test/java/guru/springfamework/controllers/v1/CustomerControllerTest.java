@@ -1,9 +1,6 @@
 package guru.springfamework.controllers.v1;
 
-import guru.springfamework.api.v1.model.CategoryDTO;
 import guru.springfamework.api.v1.model.CustomerDTO;
-import guru.springfamework.domain.Customer;
-import guru.springfamework.services.CategoryService;
 import guru.springfamework.services.CustomerService;
 import guru.springfamework.services.ResourceNotFoundException;
 import org.junit.Before;
@@ -13,7 +10,6 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MockMvcBuilder;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import java.util.Arrays;

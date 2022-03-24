@@ -1,0 +1,15 @@
+package guru.springfamework.api.v1.mapper;
+
+import guru.springfamework.api.v1.model.VendorDTO;
+import guru.springfamework.domain.Vendor;
+import org.mapstruct.Mapper;
+import org.mapstruct.factory.Mappers;
+
+@Mapper(componentModel = "spring")
+public interface VendorMapper {
+    VendorMapper INSTANCE = Mappers.getMapper(VendorMapper.class);
+
+    VendorDTO vendorToVendorDto(Vendor vendor);
+
+    Vendor vendorDtoToVendor(VendorDTO vendorDto);
+}
